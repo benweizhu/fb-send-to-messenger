@@ -2,30 +2,31 @@
 <html>
 
 <body>
+        <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        appId: '219102351974463',
+                        autoLogAppEvents: true,
+                        xfbml: true,
+                        version: 'v2.12'
+                    });
+                };
+            
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            
     <div class="fb-send-to-messenger" messenger_app_id="219102351974463" page_id="1707904982629563" data-ref="heroku" color="blue" size="standard">
-        
-    </div>
-</body>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '219102351974463',
-            autoLogAppEvents: true,
-            xfbml: true,
-            version: 'v2.12'
-        });
-    };
 
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+    </div>
+    </body>
 
 </html>
