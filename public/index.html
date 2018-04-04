@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <title>send to facebook</title>
+</head>
 <body>
-        <script>
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        appId: '306045276589768',
-                        autoLogAppEvents: true,
-                        xfbml: true,
-                        version: 'v2.12'
-                    });
-                };
-            
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) {
-                        return;
-                    }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
-            
-    <div class="fb-send-to-messenger" messenger_app_id="306045276589768" page_id="634065496931948" data-ref="heroku" color="blue" size="standard">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '219102351974463',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.12'
+            });
+        };
 
-    </div>
-    </body>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-send-to-messenger" messenger_app_id="219102351974463" page_id="1707904982629563" data-ref="email" color="blue"
+        size="large"></div>
+</body>
 
 </html>
