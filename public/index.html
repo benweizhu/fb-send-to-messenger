@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>send to facebook</title>
 </head>
+
 <body>
     <script>
         window.fbAsyncInit = function () {
@@ -11,6 +13,9 @@
                 autoLogAppEvents: true,
                 xfbml: true,
                 version: 'v2.12'
+            });
+            FB.Event.subscribe('send_to_messenger', function (e) {
+                console.log(e);
             });
         };
 
